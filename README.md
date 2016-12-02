@@ -130,3 +130,22 @@ Here's a few things that typically go inside the `MuseScore` object declaration:
         }
       }
     ```
+
+# Some scary bits: attributes and properties
+
+So, it turns out that QML has a few things that might challenge your conventional notions about writing plugins being a simple matter of just writing a script, and cause you to have to scratch your head and think a bit.     Those are the distinctions between attributes and properties, and whether the value assigned to them are static or dynamic.  Yeah, real computer science here.
+
+Check out this, and really think hard about it:  http://doc.qt.io/qt-5/qtqml-syntax-objectattributes.html
+
+You'll see a few examples of these `property` things in the Color Notes plugin, `colornotes.qml`.  This also shows the list type, which uses the square bracket syntax ('[]'):
+
+```
+    property variant colors : [
+               "#e21c48", "#f26622", "#f99d1c",
+               "#ffcc33", "#fff32b", "#bcd85f",
+               "#62bc47", "#009c95", "#0071bb",
+               "#5e50a1", "#8d5ba6", "#cf3e96"
+               ]
+      property variant black : "#000000"
+
+```
