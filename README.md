@@ -81,3 +81,13 @@ What can you put in this block?
 
 The following things:
 
+* property value pairs, such as:
+    ```
+    menuPath: "Plugins.ABC Import"
+    version: "2.0"
+    ```
+* JavaScript function definitions, such as:
+    ```
+    function squared(x) { return x * x; }
+    ```
+* 
