@@ -85,7 +85,7 @@ Rectangle {
 
 ## The `MuseScore` block:
 
-The next thing you'll typically see is a big block of code that looks like this:
+The next thing you'll typically see is a big block of code that looks like this, and is an "object declaration" for an object called `MuseScore`:
 
 ```
 MuseScore {
@@ -93,11 +93,11 @@ MuseScore {
 }
 ```
 
-Pretty much all of your code is going to go in this block.   
+It is typical for all (or most) of your code to go inside this one Object Declaration.
 
-What can you put in this block?
+That's why its helpful to understand a bit about the syntax rules for these Object Declarations, as explained on this page: http://doc.qt.io/qt-5/qtqml-syntax-basics.html
 
-The following things:
+Here's a few things that typically go inside the `MuseScore` object declaration:
 
 * Property value pairs, such as these.  Note that some of them, such as `onRun`, may be blocks containing JavaScript code.
 
@@ -115,7 +115,7 @@ The following things:
        return x * x; 
     }
     ```
-* Nested items, such as this `Button` definition.  Note that internally, it has a similar structure to the `MuseScore` definition.
+* Nested child objects, such as this `Button` definition.  Note that internally, it has a similar structure to the `MuseScore` object declaration:
 
     ```
       Button {
