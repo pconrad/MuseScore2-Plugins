@@ -54,3 +54,30 @@ It helps to know that QML is a language that is a component of QT, which is a so
     stuff you read on QT sites for QML.
           
       
+# Basic Syntax of a MuseScore 2.0 Plugin in QML
+
+Here are a few getting started basics of the syntax of a MuseScore 2.0 plugin.
+
+First, the file will always start with (at least) these two lines (as explained in this [forum post](https://musescore.org/en/node/17581)).
+
+```
+import QtQuick 2.0
+import MuseScore 1.0
+```
+
+These two lines are needed for the plugin to be able to run at all, and in order to access all of objects that are of interest in MuseScore (i.e. the parts of a score.)
+
+The next thing you'll typically see is a big block of code that looks like this:
+
+```
+MuseScore {
+   // stuff goes here   
+}
+```
+
+Pretty much all of your code is going to go in this block.   
+
+What can you put in this block?
+
+The following things:
+
