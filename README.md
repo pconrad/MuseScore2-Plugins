@@ -58,22 +58,32 @@ It helps to know that QML is a language that is a component of QT, which is a so
 
 Here are a few getting started basics of the syntax of a MuseScore 2.0 plugin.
 
+## Basic Syntax of a MuseScore 2.0 plugin.
+
+The basic syntax of a MuseScore 2.0 plus is always exactly this, with only a small number of possible variations:
+
+```
+import QtQuick 2.0
+import MuseScore 1.0
+MuseScore {
+   // stuff goes here   
+}
+```
+
+There could be a few extra imports, but this is rare.  Usually, you'll have exactly these two.  (For an exception, see: [QML-details/imports.md](QML-details/imports.md)).
+
+The lines that start with `MuseScore` and have an open and close brace `{ ... }` comprise an *Object Declaration* according to the QML syntax rules.  The rules for QML files specify that following any import statements, there is [always exactly one root object](http://doc.qt.io/qt-5/qtqml-documents-structure.html), and it would appear that in the case of a MuseScore 2.0 plugin, that
+root object should always be of type `MuseScore`.
+
 ## Basic QML Syntax
 
 It is worth reading through this short web page that describes the basic syntax of QML.  
 
 * http://doc.qt.io/qt-5/qtqml-syntax-basics.html
 
-You can skim over the part about imports, since typically, you'll just use the following two standard imports, and never need to know anything more about them:
+You can skim over the part about imports, since typically, you'll just use the two standard imports, and never need to know anything more about those.
 
-```
-import QtQuick 2.0
-import MuseScore 1.0
-```
-
-If you do, there is a bit more on imports here: [QML-details/imports.md](QML-details/imports.md)
-
-Focus instead on the part about object declarations such as this one:
+Focus instead on the part about object declarations such as this one&mdash;that's worth reading, since the `MuseScore {} ` block that makes up the bulk of every MuseScore QML file is, in fact, an Object Declaration.    So understanding the syntax for these is important.
 
 ```
 Rectangle {
@@ -83,19 +93,7 @@ Rectangle {
 }
 ```
 
-## The `MuseScore` block:
-
-The next thing you'll typically see is a big block of code that looks like this, and is an "object declaration" for an object called `MuseScore`:
-
-```
-MuseScore {
-   // stuff goes here   
-}
-```
-
-It is typical for all (or most) of your code to go inside this one Object Declaration.
-
-That's why its helpful to understand a bit about the syntax rules for these Object Declarations, as explained on this page: http://doc.qt.io/qt-5/qtqml-syntax-basics.html
+# What goes in the `MuseScore` Object Declaration?
 
 Here's a few things that typically go inside the `MuseScore` object declaration:
 
