@@ -82,6 +82,7 @@ What can you put in this block?
 The following things:
 
 * Property value pairs, such as these.  Note that some of them, such as `onRun`, may be blocks containing JavaScript code.
+
     ```
     menuPath: "Plugins.MyAwesomePlugin"
     version: "2.0"
@@ -90,12 +91,14 @@ The following things:
     }
     ```
 * JavaScript function definitions, such as:
+
     ```
     function squared(x) {
        return x * x; 
     }
     ```
 * Nested items, such as this `Button` definition.  Note that internally, it has a similar structure to the `MuseScore` definition.
+
     ```
       Button {
         id : buttonCancel
