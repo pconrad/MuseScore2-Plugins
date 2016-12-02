@@ -44,7 +44,7 @@ It helps to know that parts of QML are based on JavaScript coding
 * If you don't know JavaScript programming, hopefully you are familiar with some similar language, and can pick up languages quickly.
 * If this is your first experience with programming at all, back away slowly, and go take an intro JavaScript tutorial or class.
 
-It helps to know that QML is a language that is a component of QT, which is a software development framework used in the production of MuseScore, <i>if only so that you know where to look for documentation about QML</i>, basically on the QML section of the QT website here: http://doc.qt.io/qt-5/qtqml-index.html
+It helps to know that QML is a language that is a component of QT, which is a software development framework used in the production of MuseScore, <i>if only so that you know where to look for documentation about QML</i>, basically on the QML section of the QT website here: http://doc.qt.io/qt-5/qmlreference.html
 
 *   Much of the QML documentation on the QT websites doesn't translate directly into what you need to know for MuseScore 
     2.0 plugins, but its just about all we have.  So, we live with it.
