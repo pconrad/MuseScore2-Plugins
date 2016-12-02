@@ -131,7 +131,7 @@ Here's a few things that typically go inside the `MuseScore` object declaration:
       }
     ```
 
-# Some scary bits: attributes and properties
+# Some scary bits: attributes, properties, signals
 
 So, it turns out that QML has a few things that might challenge your conventional notions about writing plugins being a simple matter of just writing a script, and cause you to have to scratch your head and think a bit.     Those are the distinctions between attributes and properties, and whether the value assigned to them are static or dynamic.  Yeah, real computer science here.
 
@@ -150,4 +150,6 @@ You'll see a few examples of these `property` things in the Color Notes plugin, 
 
 ```
 
-Fortunately, that seems to be the only use of the `property` keyword in the QML examples given, so we may be able to put off going down that dark alley of QML semantics for a bit.  It seems we can accomplish quite a few things without needing to know about the `property` keyword.   Whew!
+Fortunately, that seems to be the only use of the `property` keyword in the QML examples given, so we may be able to put off going down that dark alley of QML semantics for a bit.  It seems we can accomplish quite a few things without needing to know about the `property` keyword.   Whew!  Ditto for the `signal` keyword.
+
+
