@@ -24,3 +24,11 @@ You can also find a few built into MuseScore that are distributed along with the
 
 Those plugins can be found the `/share/plugins` directory of the github repo for MuseScore's source code, here: https://github.com/musescore/MuseScore/tree/master/share/plugins
 
+# How can I work with MuseScore plugins?
+
+You can starting by downloading this github repo, containing a few plugin examples.   
+
+* If you understand git workflow, use it (fork, clone etc.), otherwise, just download a .zip version and unzip it.
+* Then, open MuseScore 2.0, and select "Plugins => Plugin Creator" from the menu.
+* You can then click the "open file" icon (&#x1f4c2;) and navigate to any of the `.qml` files from this repo.
+* To run the example, click the "Run" button at lower left.
