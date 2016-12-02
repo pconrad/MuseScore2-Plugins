@@ -32,3 +32,23 @@ You can starting by downloading this github repo, containing a few plugin exampl
 * Then, open MuseScore 2.0, and select "Plugins => Plugin Creator" from the menu.
 * You can then click the "open file" icon (&#x1f4c2;) and navigate to any of the `.qml` files from this repo.
 * To run the example, click the "Run" button at lower left.
+
+# What is QML
+
+First, its important to know what you do, and don't need to know about QML.
+
+It helps to know that parts of QML are based on JavaScript coding
+* So if you know JavaScript programming, you have a good head start.
+* If you don't know JavaScript programming, hopefully you are familiar with some similar language, and can pick up languages quickly.
+* If this is your first experience with programming at all, back away slowly, and go take an intro JavaScript tutorial or class.
+
+It helps to know that [QML](http://doc.qt.io/qt-5/qtqml-index.html) is a language that is a component of QT, which is a software development framework used in the production of MuseScore, <i>if only so that you know where to look for documentation about QML</i>.
+
+*   Much of the QML documentation on the QT websites doesn't translate directly into what you need to know for MuseScore 
+    2.0 plugins, but its just about all we have.  So, we live with it.
+*   The MuseScore 2.0 Plugin Creator contains its only documentation for the actual Objects that we manipulate when creating
+    MuseScore 2.0 Plugins using QML, but it <em>does not seem to have any general information about the syntax of QML</em> or how
+    the language actually works.  So, you have to pretty much figure that out on your own, or piece it together from scraps of
+    stuff you read on QT sites for QML.
+          
+      
