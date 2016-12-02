@@ -24,6 +24,8 @@ You can also find a few built into MuseScore that are distributed along with the
 
 Those plugins can be found the `/share/plugins` directory of the github repo for MuseScore's source code, here: https://github.com/musescore/MuseScore/tree/master/share/plugins
 
+A snapshot of those from commit [a61cf1](https://github.com/musescore/MuseScore/commit/a61cf1cccd145cf8da68b56c9a1adffcb23c6859) is contained in the subdirectory [original-examples] in this repo.
+
 # How can I work with MuseScore plugins?
 
 You can starting by downloading this github repo, containing a few plugin examples.   
