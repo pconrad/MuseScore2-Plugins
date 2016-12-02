@@ -81,13 +81,31 @@ What can you put in this block?
 
 The following things:
 
-* property value pairs, such as:
+* Property value pairs, such as these.  Note that some of them, such as `onRun`, may be blocks containing JavaScript code.
     ```
-    menuPath: "Plugins.ABC Import"
+    menuPath: "Plugins.MyAwesomePlugin"
     version: "2.0"
+    onRun: {
+       console.log("Look... my plugin printed something!")
+    }
     ```
 * JavaScript function definitions, such as:
     ```
-    function squared(x) { return x * x; }
+    function squared(x) {
+       return x * x; 
+    }
     ```
-* 
+* Nested items, such as this `Button` definition.  Note that internally, it has a similar structure to the `MuseScore` definition.
+    ```
+      Button {
+        id : buttonCancel
+        text: qsTr("Cancel")
+        anchors.bottom: window.bottom
+        anchors.right: buttonConvert.left
+        anchors.topMargin: 10
+        anchors.bottomMargin: 10
+        onClicked: {
+                Qt.quit();
+        }
+      }
+    ```
