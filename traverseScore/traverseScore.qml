@@ -7,8 +7,27 @@ MuseScore {
     version:     "2.0"
     description: qsTr("This demo plugin traverses a score")
 
+   function processNote(note) {
+     console.log("note: " + note + " .pitch: " + note.pitch + " .line " + note.line);
+  }
+
+   function processChord(chord) {
+      console.log("chord.notes.length=" + chord.notes.length);
+      for (var i=0; i<chord.notes.length; i++) {
+        processNote(chord.notes[i]);
+     }
+   }
+
     function processElement(element) {
-              console.log("element: " + element)
+        console.log("element: " + element)
+        switch (element.type) {
+           case Element.CHORD:
+               processChord(element);
+                
+              break;
+           default: 
+              break;
+      }
     }
 
     function processAllSegments(measure) {    
