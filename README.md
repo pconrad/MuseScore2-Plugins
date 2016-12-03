@@ -97,11 +97,12 @@ Rectangle {
 
 Here's a few things that typically go inside the `MuseScore` object declaration:
 
-* Property value pairs, such as these.  Note that some of them, such as `onRun`, may be blocks containing JavaScript code.
+* Property value pairs, such as these.  Note that some of them, such as `onRun`, may be blocks containing JavaScript code.  These are four properties that are nearly always present:
 
     ```
-    menuPath: "Plugins.MyAwesomePlugin"
     version: "2.0"
+    description: "My plugin to do awesome things"
+    menuPath: "Plugins.MyAwesomePlugin"
     onRun: {
        console.log("Look... my plugin printed something!")
     }
