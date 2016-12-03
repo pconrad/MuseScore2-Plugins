@@ -152,3 +152,11 @@ You'll see a few examples of these `property` things in the Color Notes plugin, 
 Fortunately, that seems to be the only use of the `property` keyword in the QML examples given, so we may be able to put off going down that dark alley of QML semantics for a bit.  It seems we can accomplish quite a few things without needing to know about the `property` keyword.   Whew!  Ditto for the `signal` keyword.
 
 
+# Traversing A Score
+
+The folllowing code iterates through all of the measures in a score:
+
+```
+
+
+```
